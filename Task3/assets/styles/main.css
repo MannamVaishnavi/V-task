@@ -1,3 +1,136 @@
-html, body{
+/* 1.correct the inheritance and scaling of font sie in all browers.
+2.correct the dd em font sizing in all browsers
+3.show the overflow in edge and IE
+*/
+
+/* setting up the line height and font-size to remain same across all browsers*/
+html {
     line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*remove default margins on all sides*/
+body {
+    margin: 0;
+}
+
+/* making main as a block level element to occupy entire width*/
+main {
+    display: block;
+}
+
+/* applying fontsize and margin to the h1 heading. 1em = 16px*/
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/*adjust border height in such a way that all the content inside it should fit and not overflow (there is a chance of logo overflow if its given a bigger size)*/
+header {
+    border-bottom: sloid 1px #ccc;
+    height: 120px;
+}
+
+/* to avoid any line thru/ underlines to the link text. This works for all the anchor tags since we applied css to the tag itself.*/
+a {
+    text-decoration: none;
+}
+
+/*Styling the div present in the header. Given 1180px width which is firefox browser's screen width. */
+#mainHeader {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* displaying logo as inline element coz we need to place the nav bar next to it and specified it's width*/
+.logoLink {
+    display: inline-block;
+    width: 262px;
+}
+
+/*we want the li items in the nav bar in the inline format and we want that nav bar to occup the remaining width (the left over width after the image is placed)*/
+.primaryNav {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: calc(100%-400px);
+}
+
+/*setting a space Of 6px around the li elements on all the sides. for better visibility purpose*/
+.primaryNav ul {
+    margin: 6px;
+}
+
+.primaryNav ul li {
+    display: inline-block;
+    /* Displaying list items horizontally using inline block */
+    list-style: none;
+    /* removing the default bullets */
+    padding: 10px 22px;
+    /* Add 10px padding on top and bottom, 22px on left and right */
+}
+
+/* Add 10px padding around all sides of each div having label-text box pair */
+.form-group {
+    padding: 10px;
+}
+
+/* this div contains the div which is having the form. so we center the contents of this div horiontally and vertically to get the form in the center of the page*/
+.maindiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this div consits of the form iteself, we specify the dimensions, and center the content of the form*/
+#bg {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    text-align: center;
+}
+
+/* ths is for centering the heading in the form*/
+h3 {
+    margin-left: 130px;
+}
+
+/* we want the text box to place in the same line as that of label, so we use inline block and adjust the width*/
+label {
+    display: inline-block;
+    width: 170px;
+    text-align: center;
+}
+
+/*adjusting the text area widths*/
+textarea {
+    width: 173px;
+    height: 70px;
+}
+
+/* specifying the button's dimensions and spaces around it*/
+input[type="submit"] {
+    width: 100px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+/* Base styles for all section headings */
+section h3 {
+    font-family: Arial, sans-serif; 
+    font-size: 24px; 
+    color: #333; 
+}
+
+/* changing colors for each section heading*/
+.first-service h3 {
+    color: #7d0ae9; 
+}
+
+.second-service h3 {
+    color: #7d0ae9;
+}
+
+.third-service h3 {
+    color: #7d0ae9; 
 }
