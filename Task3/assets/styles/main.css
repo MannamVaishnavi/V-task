@@ -1,5 +1,5 @@
-/* 1.correct the inheritance and scaling of font sie in all browers.
-2.correct the dd em font sizing in all browsers
+/* 1.correct the inheritance and scaling of font size in all browers. - line height , min 1.6
+2.correct the em font sizing in all browsers
 3.show the overflow in edge and IE
 */
 
@@ -9,9 +9,13 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-/*remove default margins on all sides*/
+/*remove default margins on all browers*/
 body {
     margin: 0;
+}
+/* applying font for the whole page*/
+body {
+    font-family: 'IBM Plex Sans';
 }
 
 /* making main as a block level element to occupy entire width*/
@@ -27,7 +31,7 @@ h1 {
 
 /*adjust border height in such a way that all the content inside it should fit and not overflow (there is a chance of logo overflow if its given a bigger size)*/
 header {
-    border-bottom: sloid 1px #ccc;
+    border-bottom: solid 1px #4d0fd4;
     height: 120px;
 }
 
@@ -36,14 +40,14 @@ a {
     text-decoration: none;
 }
 
-/*Styling the div present in the header. Given 1180px width which is firefox browser's screen width. */
+/* id seclector. Styling the div present in the header.*/
 #mainHeader {
     width: 1180px;
     margin: 0 auto;
     padding: 30px 0;
 }
 
-/* displaying logo as inline element coz we need to place the nav bar next to it and specified it's width*/
+/* class selector.*/
 .logoLink {
     display: inline-block;
     width: 262px;
@@ -62,7 +66,7 @@ a {
     margin: 6px;
 }
 
-.primaryNav ul li {
+.primaryNav li {
     display: inline-block;
     /* Displaying list items horizontally using inline block */
     list-style: none;
@@ -70,6 +74,83 @@ a {
     padding: 10px 22px;
     /* Add 10px padding on top and bottom, 22px on left and right */
 }
+.primaryNav li a{
+    font-size: 20px;
+    color:#4d0fd4;
+}
+.primaryNav li a:hover{
+    color:green;
+}
+.jumbotron {
+    background: #333333 url('/assets/images/banner.jpg') no-repeat;
+    height:450px;
+    background-size: cover;
+}
+.bannerWrapper {
+    margin:0 auto;
+    width:1180px;
+}
+
+.bannerWrapper h1 {
+    color:#ef883f;
+    margin-top:0;
+    padding-top:100px;
+    text-align: left;
+    width:70%;
+    font-weight: normal;
+}
+.bannerWrapper p {
+    color: #be48f9;
+    text-align: left;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+    width:60%;
+}
+
+.reportsSection {
+    background: radial-gradient(at 95% 7%, #45bcc9 0), rgb(236, 81, 107 60%), radial-gradient(at 55% 47%, #d03996 0), rgb(236, 81, 107 80%), radial-gradient(at 35% 57%, #16f154 0), rgb(236, 81, 107 80%);
+
+}
+.reportsContainer {
+    width:1180px;
+    margin:0 auto;
+    display:flex;
+}
+.reportsContainer h3 {
+    margin-top:0;
+    text-align: center;
+}
+.reportsContainer article {
+    background: white;
+    margin: 10px;
+    width:100%;
+}
+.reportsContainer .featuredImage {
+    width:100%;
+}
+.reportsContainer .reportLink .report {
+    color:blue;
+    font-weight: bold;
+    font-size: 16px;
+}
+.reportsContainer .report{
+    padding:16px 40px 40px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Add 10px padding around all sides of each div having label-text box pair */
 .form-group {
