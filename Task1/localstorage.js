@@ -9,8 +9,8 @@ document.getElementById('btn').addEventListener('click',()=>{
         }
         else{
             localStorage.setItem('pincode', t);
-            document.getElementById('sp').innerHTML="Saved Successfully!!"
-            document.getElementById('tb').value="";
+            document.getElementById('feedbackToSave').innerHTML="Saved Successfully!!"
+            document.getElementById('tbValue').value="";
         }
     }
     else{
