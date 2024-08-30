@@ -1,0 +1,53 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*class selector*/
+.to-do-div {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(252, 177, 236);
+    flex-direction: column;
+    overflow: scroll;
+}
+
+/* to hide the scrollbar, keeping the page still scrollable*/
+.to-do-div::-webkit-scrollbar {
+    display: none;
+}
+
+/*class selector*/
+.heading {
+    display: inline-flex;
+}
+
+/*class selector*/
+.heading h4 {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*class selector*/
+.heading img {
+    margin-top: 10px;
+    width: 20px;
+    height: 25px;
+}
+
+/* id selector*/
+#saved-tasks {
+    list-style: none;
+}

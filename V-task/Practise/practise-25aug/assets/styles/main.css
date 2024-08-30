@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+/* type selector*/
+body {
+    background-image: url("/assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* type selector*/
+a {
+    text-decoration: none;
+}
+/* type selector*/
+header {
+    margin: 0;
+    height: 120px;
+    display: flex;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+/*id selector*/
+#logo-div {
+    width:170px;
+}
+/*id selector*/
+#logo {
+    width:160px;
+    height:120px;
+    border-radius: 140px;
+}
+/*id selector*/
+#nav-bar-div {
+    width: 900px;
+    height:120px;
+}
+/*class selector*/
+.nav-bar {
+    height: 120px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*class selector*/
+.nav-bar li {
+    margin-right: 50px;
+}
+/*id selector*/
+#login-signup-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:200px;
+}
+/*id selector*/
+#login-signup-div button {
+    margin-left: 10px;
+}
+/* type selector*/
+main {
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*class selector*/
+.left-div {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 80px;
+    height:300px;
+}
+/*class selector*/
+.right-div {
+    width: 280px;
+    padding: 40px;
+    height:280px;
+    margin-right: 30px;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #b8b2b2;
+    display:none;
+    border-radius: 10px;
+}
+/*id selector*/
+#login-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*id selector*/
+#login-form h3{
+    text-align: center;
+    padding:0;
+    margin-top: 0;
+}
+/* type selector*/
+input[type="text"] {
+    padding:5px;
+    margin:6px;
+    display: block;
+}
+/*id selector*/
+#login-form button{
+    margin:5px;
+}
+/*id selector*/
+#login-form p, #login-form a {
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+/*id selector*/
+#login-form .login-options img {
+    height: 30px;
+    width: 30px;
+    padding-top: 10px;
+}
+/*id selector*/
+#close-btn {
+    margin-left:95%;
+    cursor: pointer;
+}
+/* type selector*/
+footer img{
+    height: 30px;
+    width: 30px;
+    padding-top: 10px;
+}
