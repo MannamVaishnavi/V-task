@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo-div">
+            <img id="logo" src="assets/images/logo1.jpg" alt="logo">
+        </div>
+        <div id="nav-bar-div">
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">OUR SERVICES</a></li>
+                    <li><a href="subscriptions.html">SUBSCRIPTIONS</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="login-signup-div">
+            <button id="login">Login</button>
+            <button id="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-div">
+            <h3>Yoga &</h3>
+            <h3 id="orange">Meditation</h3>
+            <h3>Course</h3>
+            <p>Learn the essentials of yoga and its benefits for physical, mental, and spiritual health. Yoga is an
+                ancient wisdom that leads to union with the Self and transcends any religion or culture.</p>
+            <button id="join-us">JOIN US</button>
+        </div>
+        <div class="right-div">
+            <span id="close-btn">X</span>
+            <form id="login-form">
+                <h3>Login Here</h3>
+                <input type="text" name="username" placeholder="username">
+                <input type="text" name="password" placeholder="password">
+                <button id="login">Login</button>
+                <p>Don't have an account?</p>
+                <a href="#"> <span>Sign up </span> here.</a>
+                <hr>
+                <p>Login with</p>
+                <div class="login-options">
+                    <a href="https://x.com/?lang=en-in"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/login.php/"><img src="assets/images/facebook.png"
+                            alt="facebook">
+                    </a>
+                    <a
+                        href="https://r.search.yahoo.com/_ylt=AwrPpfgEGMtmUgQATx.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1725795588/RO=10/RU=https%3a%2f%2fwww.instagram.com%2faccounts%2flogin%2f/RK=2/RS=RwezqEgMxTKk76sGldHuPgnBh2E-"><img
+                            src="assets/images/instagram.png" alt="instagram">
+                    </a>
+                    <a
+                        href="https://r.search.yahoo.com/_ylt=AwrPpfiYF8tmUgQAB6i7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1725795481/RO=10/RU=http%3a%2f%2fin.youtube.com%2f/RK=2/RS=JquSfdbD2df9C1VV50IT.yolRj8-"><img
+                            src="assets/images/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <div>
+        <footer>
+            <span>Join us on:</span>
+            <a href="https://x.com/?lang=en-in"><img src="assets/images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/login.php/"><img src="assets/images/facebook.png" alt="facebook"></a>
+            <a
+                href="https://r.search.yahoo.com/_ylt=AwrPpfgEGMtmUgQATx.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1725795588/RO=10/RU=https%3a%2f%2fwww.instagram.com%2faccounts%2flogin%2f/RK=2/RS=RwezqEgMxTKk76sGldHuPgnBh2E-"><img
+                    src="assets/images/instagram.png" alt="instagram"></a>
+            <a
+                href="https://r.search.yahoo.com/_ylt=AwrPpfiYF8tmUgQAB6i7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1725795481/RO=10/RU=http%3a%2f%2fin.youtube.com%2f/RK=2/RS=JquSfdbD2df9C1VV50IT.yolRj8-"><img
+                    src="assets/images/youtube.png" alt="Youtube"></a>
+            <div id="copyright">
+                <p>© 2024 Nature's Yoga and Meditation. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('join-us').addEventListener('click', function() {
+            document.getElementsByClassName('right-div')[0].style.display = 'block';
+        });
+        document.getElementById('login').addEventListener('click', function() {
+            document.getElementsByClassName('right-div')[0].style.display = 'block';
+        });
+        document.getElementById('signup').addEventListener('click', function() {
+            document.getElementsByClassName('right-div')[0].style.display = 'block';
+        });
+        document.getElementById('close-btn').addEventListener('click', function () {
+            document.getElementsByClassName('right-div')[0].style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>
