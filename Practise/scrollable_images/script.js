@@ -1,5 +1,6 @@
 const totalImages = 500;
 const imageContainer = document.getElementById('imageContainer');
+let count = 0;
 
 function create(imageSrc) {
     const row = document.createElement('div');
@@ -8,9 +9,21 @@ function create(imageSrc) {
     img.src = imageSrc;
     row.appendChild(img);
     return row;
-    }
-for (let i = 1; i <= totalImages; i++) {
-    const imageSrc = `images/image${i}.jpg`;
-    const imageRow = create(imageSrc);
-    imageContainer.appendChild(imageRow);
 }
+
+function call() {
+    for (let i = 0; i < 4; i++) {
+        if (count >= totalImages) return;
+        count += 1;
+        const imageSrc = `images/image${count}.jpg`;
+        const imageRow = create(imageSrc);
+        imageContainer.appendChild(imageRow);
+    }
+}
+
+window.onscroll = function() {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        call(); 
+    }
+};
+call();
