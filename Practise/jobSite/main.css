@@ -1,0 +1,127 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.logo img {
+    width:100px;
+    height:100px;
+    margin: 10px 0 0 50px;
+}
+
+.nav-bar {
+    margin-left: 200px;
+    padding-bottom: 15px;
+}
+.nav-bar li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    font-family: 'Source Sans Pro', 'Helvetica', arial, sans-serif !important;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    height:100vh;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.initial-heading {
+    margin-top: 20px;
+}
+
+.initial-heading h2 {
+    color:white;
+    font-family: 'Source Sans Pro', 'Helvetica', arial, sans-serif !important;
+    font-weight: 600; /*check why this isnt getting applied.*/
+    font-size: 32px;
+}
+#part1, #part2 {
+    margin:0;
+}
+
+#part2 {
+    position: relative;
+    left:34px;
+}
+
+.search-bars {
+    margin: 20px 0;
+}
+
+.search-bars input[type="text"] {
+    height:30px;
+    border-radius: 4px;
+    border: none;
+}
+
+.search-bars #job-title {
+    width:300px;
+}
+
+.search-bars button {
+    width:80px;
+    padding:7px;
+    margin-left: 4px;
+    background-color: rgb(248, 108, 9);
+    color: white;
+    border:none;
+}
+
+.search-bars button::placeholder {
+    margin-left:5px;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.options button {
+    width:170px;
+    padding:5px;
+    margin-right: 70px;
+    background-color: rgb(248, 108, 9);
+    color: white;
+    border:none;
+}
+
+.post-job {
+    margin-top: 40px;
+}
+
+.post-job h3 {
+    margin-bottom: 10px;
+    margin-left: 220px;
+    color: white;
+}
+
+.post-job h4, .post-job p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.post-job button {
+    margin-top:10px;
+    margin-left: 300px;
+    width:130px;
+    height:30px;
+    background-color: rgb(248, 108, 9);
+    color: white;
+    border:none;
+}
