@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;  /* Ensure the body and html take full viewport height */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(230, 244, 147, 0.5);;
+}
+
+.container img {
+    width: 400px;
+    height: 300px;
+}
+
+.container span {
+    background-color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+    padding:4px;
+}
+
+.container #left {
+    position: relative;
+    left:-400px;
+    top:-150px;
+}
+
+.container #right {
+    position: relative;
+    top:-150px;
+    left:-50px;
+}
