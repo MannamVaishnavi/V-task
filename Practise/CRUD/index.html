@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>CRUD APPLICATION</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD APPLICATION</h1>
+        <div class="operation-container">
+            <h3>CRUD Operations</h3>
+            <div class="add-operation">
+                <input type="text" id="name" placeholder="Enter you name">
+                <input type="text" id="email" placeholder="Enter your email">
+                <button id="addButton">Add</button>
+            </div>
+            <div class="table-data">
+                <table id="tbl">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    
+                     
+                
+                </table>
+            </div>
+        </div>
+        <div class="update">
+            <input type="text" id="updateName" placeholder="Enter name for updating">
+            <input type="text" id="updateMail" placeholder="Enter email for updating">
+            <button id="updateButton">Update</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

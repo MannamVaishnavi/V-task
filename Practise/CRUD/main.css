@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(221, 135, 5);
+    width:600px;
+    height:450px;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+
+.operation-container {
+    width:550px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.operation-container h3 {
+    padding:5px;
+    margin:0;
+}
+
+.operation-container input[type="text"] {
+    margin:5px 0;
+    padding:5px;
+    border-radius: 3px;
+    border:0.5px solid black;
+}
+
+.operation-container #addButton {
+    padding:5px;
+    margin-left: 5px;
+    background-color: rgb(7, 185, 7);
+    border:none;
+    border-radius: 2px;
+    color:white;
+    border-radius: 3px;
+}
+
+.table-data {
+    overflow-y: auto;
+    margin:10px;
+    height:150px;
+    width:450px;
+}
+
+.table-data table {
+    border-spacing: 20px;
+}
+
+.edit-btn, .dlt-btn {
+    padding:4px 6px;
+    margin-left:6px;
+    border:none;
+    border-radius: 2px;
+    color:white;
+    border-radius: 3px;
+}
+
+.edit-btn {
+    background-color: rgb(255, 183, 0);
+}
+
+.dlt-btn {
+    background-color: rgb(194, 13, 13);
+}
+
+.update {
+    margin-top: 20px;
+}
+
+.update input[type="text"] {
+    border-radius: 3px;
+    padding:5px;
+    border: none;
+    margin-right: 4px;
+}
+
+.update button {
+    padding:4px 5px;
+    border:none;
+    color:white;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+.update #updateButton {
+    background-color: rgb(36, 153, 248);
+}
+
+.update #cancelButton {
+    background-color: red;
+}
