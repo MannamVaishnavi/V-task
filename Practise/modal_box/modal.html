@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modal Box</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="modal.css" type="text/css">
+    </head>
+    <body>
+        <form class="application">
+            <div class="logo">
+                <img id="image" src="logo.jpg" alt="logo">
+                <h3>XYZ Application Form</h3>
+            </div>
+            <label id="name">Name</label>
+            <input type="text" id="name-box">
+            <label id="role">Role you are applying for</label>
+            <select id="options">
+                <option value="" disabled selected>Select role</option>
+                <option value="Developer">Developer</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Programmer">Programmer</option>
+                <option value="Engineer">Engineer</option>
+                <option value="HR">HR</option>
+            </select>
+            <label>Location</label>
+            <input type="text" id="location-box">
+            <label>Years of Experience</label>
+            <input type="number" min="0" max="30" id="exp">
+            <p>I have read the terms and conditions <a id="lnk" href="#">here</a></p>
+            <button id="submit" disabled>Submit</button>
+        </form>
+        <div class="modal-box">
+            <ol>
+                <li>User Agreement: By accessing this website, you agree to comply with these terms and conditions.</li>
+                <li>Privacy Policy: We respect your privacy and are committed to protecting your personal data. Please review our privacy policy for more details.</li>
+                <li>Account Responsibility: Users are responsible for maintaining the confidentiality of their account and password, and for any activities that occur under their account.</li>
+                <li>Age Restriction: Users must be at least 18 years old or have parental consent to use this service.</li>
+                <li>Content Ownership: All content on this website, including text, graphics, and images, is the property of the company or its licensors.</li>
+                <li>Prohibited Activities: You are prohibited from using the website for any unlawful purpose, including spamming, hacking, or infringing on intellectual property rights.</li>
+                <li>Limitation of Liability: The company is not liable for any damages arising from the use or inability to use the website.</li>
+                <li>User-Generated Content: Any content uploaded by users (such as reviews or comments) must not violate any third-party rights or contain offensive material.</li>
+                <li>Modifications: We reserve the right to modify or discontinue the service without notice at any time.</li>
+                <li>Termination: We may terminate or suspend your account at our discretion if you breach these terms.</li>
+                <li>Payment Terms: All fees and payments made through the platform are non-refundable unless otherwise specified.</li>
+                <li>Intellectual Property Rights: Any trademarks, logos, or brand features displayed on the site are protected by law and cannot be used without permission.</li>
+                <li>Third-Party Links: This site may contain links to third-party websites, but we are not responsible for their content or services.</li>
+                <li>Warranty Disclaimer: The service is provided "as is" without any warranty, whether express or implied.</li>
+                <li>Dispute Resolution: Any disputes arising from these terms will be governed by the laws of [applicable jurisdiction].</li>
+                <li>Data Usage: We may collect and use your data in accordance with our privacy policy.</li>
+                <li>Indemnification: You agree to indemnify and hold harmless the company from any claims or damages resulting from your use of the website.</li>
+                <li>Governing Law: These terms shall be governed by and construed in accordance with the laws of [applicable jurisdiction].</li>
+                <li>Force Majeure: The company is not responsible for any delays or failure to perform due to circumstances beyond our control, such as natural disasters or power outages.</li>
+                <li>Cookie Policy: We use cookies to enhance your experience. By continuing to browse, you consent to the use of cookies.</li>
+            </ol>
+            <button id="agree">I Agree</button>
+            
+        </div>
+        <script src="modal.js"></script>
+    </body>
+</html>
